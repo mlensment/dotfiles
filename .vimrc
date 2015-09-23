@@ -12,3 +12,5 @@ set showcmd " display incomplete commands
 highlight ColorColumn ctermbg=0
 set textwidth=80
 set colorcolumn=+1
+
+filetype plugin indent on " load file type plugins + indentation
