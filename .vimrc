@@ -50,6 +50,12 @@ set scrolloff=10
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
+" Searching
+set hlsearch " highlight matches
+set incsearch " incremental searching
+set ignorecase " searches are case insensitive...
+set smartcase " ... unless they contain at least one capital letter
+
 augroup vimrcEx
   autocmd!
 
