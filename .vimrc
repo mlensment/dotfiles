@@ -7,3 +7,8 @@ set shiftwidth=2
 set expandtab
 
 set showcmd " display incomplete commands
+
+" Make it obvious where 80 characters is
+highlight ColorColumn ctermbg=0
+set textwidth=80
+set colorcolumn=+1
