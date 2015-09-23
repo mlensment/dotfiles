@@ -29,6 +29,10 @@ set colorcolumn=+1
 
 set scrolloff=10 " Keep n lines below and above the cursor
 
+" Show line numbers and paint them grey
+set number
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+
 augroup vimrcEx
   autocmd!
 
