@@ -6,6 +6,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" To install the following plugins execute :PluginInstall
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim' " fuzzy search
 
