@@ -9,10 +9,16 @@ call vundle#begin()
 " To install the following plugins execute :PluginInstall
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim' " fuzzy search
+Plugin 'altercation/vim-colors-solarized' " solarized color scheme
 
 call vundle#end()
+
 filetype plugin indent on " load file type plugins + indentation
 " Vundle (end)
+
+syntax enable
+set background=dark
+colorscheme solarized
 
 set ruler " show the cursor position all the time
 
