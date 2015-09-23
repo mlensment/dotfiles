@@ -22,10 +22,12 @@ set expandtab
 
 set showcmd " display incomplete commands
 
-" Make it obvious where 80 characters is
+" Make it obvious where 80 characters is (ctermbg means color)
 highlight ColorColumn ctermbg=0
 set textwidth=80
 set colorcolumn=+1
+
+set scrolloff=10 " Keep n lines below and above the cursor
 
 augroup vimrcEx
   autocmd!
