@@ -1,4 +1,18 @@
+" Vundle (begin)
+" https://github.com/VundleVim/Vundle.vim
 set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'kien/ctrlp.vim' " fuzzy search
+
+call vundle#end()
+filetype plugin indent on " load file type plugins + indentation
+" Vundle (end)
+
 set ruler " show the cursor position all the time
 
 " Tabs to 2 spaces
@@ -13,4 +27,14 @@ highlight ColorColumn ctermbg=0
 set textwidth=80
 set colorcolumn=+1
 
-filetype plugin indent on " load file type plugins + indentation
+augroup vimrcEx
+  autocmd!
+
+  " When editing a file, always jump to the last known cursor position.
+  " Don't do it for commit messages, when the position is invalid, or when
+  " inside an event handler (happens when dropping a file on gvim).
+  autocmd BufReadPost *
+    \ if &ft != 'gitcommit' && line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
+augroup end
