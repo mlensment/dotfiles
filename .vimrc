@@ -12,6 +12,8 @@ Plugin 'kien/ctrlp.vim' " Fuzzy search
 Plugin 'altercation/vim-colors-solarized' " Solarized color scheme
 Plugin 'mileszs/ack.vim' " Search within files
 Plugin '907th/vim-auto-save' " Auto save files
+Plugin 'airblade/vim-gitgutter' " Show git updates
+Plugin 'tpope/vim-rails' " Rails plugin
 
 call vundle#end()
 
