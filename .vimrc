@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim' " Fuzzy search
 Plugin 'altercation/vim-colors-solarized' " Solarized color scheme
 Plugin 'mileszs/ack.vim' " Search within files
+Plugin '907th/vim-auto-save' " Auto save files
 
 call vundle#end()
 
@@ -23,10 +24,13 @@ set background=dark
 colorscheme solarized
 
 " CTRLP (fuzzy search) config
-let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<c-t>'],
-    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-    \ } " Open files in tab by default
+" let g:ctrlp_prompt_mappings = {
+"    \ 'AcceptSelection("e")': ['<c-t>'],
+"    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+"    \ } " Open files in tab by default
+
+" Enable AutoSave on Vim startup
+let g:auto_save = 1
 
 " Show the cursor position all the time
 set ruler
