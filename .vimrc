@@ -15,6 +15,7 @@ Plugin '907th/vim-auto-save' " Auto save files
 Plugin 'airblade/vim-gitgutter' " Show git updates
 Plugin 'tpope/vim-rails' " Rails plugin
 Plugin 'scrooloose/nerdcommenter' " Comment out code
+Plugin 'terryma/vim-multiple-cursors' " Multiple cursors
 
 call vundle#end()
 
