@@ -14,11 +14,15 @@ Plugin 'mileszs/ack.vim' " Search within files
 Plugin '907th/vim-auto-save' " Auto save files
 Plugin 'airblade/vim-gitgutter' " Show git updates
 Plugin 'tpope/vim-rails' " Rails plugin
+Plugin 'scrooloose/nerdcommenter' " Comment out code
 
 call vundle#end()
 
 filetype plugin indent on " load file type plugins + indentation
 " Vundle (end)
+
+" Set the <leader> key to comma
+let mapleader=","
 
 " Solarized config
 syntax enable
