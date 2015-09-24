@@ -10,6 +10,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim' " Fuzzy search
 Plugin 'altercation/vim-colors-solarized' " Solarized color scheme
+Plugin 'mileszs/ack.vim' " Search within files
 
 call vundle#end()
 
@@ -29,6 +30,9 @@ let g:ctrlp_prompt_mappings = {
 
 " Show the cursor position all the time
 set ruler
+
+" Disable swap file creation
+set noswapfile
 
 " Tabs to 2 spaces
 set tabstop=2
@@ -55,6 +59,9 @@ set hlsearch " highlight matches
 set incsearch " incremental searching
 set ignorecase " searches are case insensitive...
 set smartcase " ... unless they contain at least one capital letter
+
+" Search within files with ag + ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 augroup vimrcEx
   autocmd!
