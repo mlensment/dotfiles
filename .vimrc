@@ -11,19 +11,21 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim' " Fuzzy search
 Plugin 'altercation/vim-colors-solarized' " Solarized color scheme
 Plugin 'mileszs/ack.vim' " Search within files
-Plugin '907th/vim-auto-save' " Auto save files
 Plugin 'airblade/vim-gitgutter' " Show git updates
 Plugin 'tpope/vim-rails' " Rails plugin
 Plugin 'scrooloose/nerdcommenter' " Comment out code
-Plugin 'terryma/vim-multiple-cursors' " Multiple cursors
 
 call vundle#end()
 
 filetype plugin indent on " load file type plugins + indentation
 " Vundle (end)
 
+set laststatus=2
 " Set the <leader> key to comma
-let mapleader=","
+let mapleader="\<Space>"
+
+" Always show gitgutter
+let g:gitgutter_sign_column_always = 1
 
 " Solarized config
 syntax enable
@@ -35,9 +37,6 @@ colorscheme solarized
 "    \ 'AcceptSelection("e")': ['<c-t>'],
 "    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
 "    \ } " Open files in tab by default
-
-" Enable AutoSave on Vim startup
-let g:auto_save = 1
 
 " Show the cursor position all the time
 set ruler
@@ -85,3 +84,6 @@ augroup vimrcEx
     \   exe "normal g`\"" |
     \ endif
 augroup end
+
+" Key mapping
+nnoremap <Leader>w :w<CR> " <Leader> + w saves file
