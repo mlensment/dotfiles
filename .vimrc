@@ -14,6 +14,7 @@ Plugin 'mileszs/ack.vim' " Search within files
 Plugin 'airblade/vim-gitgutter' " Show git updates
 Plugin 'tpope/vim-rails' " Rails plugin
 Plugin 'scrooloose/nerdcommenter' " Comment out code
+Plugin 'tpope/vim-endwise' " For automatic def end
 
 call vundle#end()
 
