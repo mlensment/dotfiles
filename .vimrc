@@ -15,6 +15,7 @@ Plugin 'airblade/vim-gitgutter' " Show git updates
 Plugin 'tpope/vim-rails' " Rails plugin
 Plugin 'scrooloose/nerdcommenter' " Comment out code
 Plugin 'tpope/vim-endwise' " For automatic def end
+Plugin 'nelstrom/vim-visual-star-search' " Search with * in visual
 
 call vundle#end()
 
